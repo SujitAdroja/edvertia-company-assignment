@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #222;
+
+  /* Only works if there is nothing absolutely positioned in relation to body */
+  overflow-x: hidden;
+}
+/* general reusable classes */
+.container {
+  max-width: 100rem;
+  margin: 0 auto;
+}
+.heading-primary {
+  font-size: 3.8rem;
+  line-height: 1.4;
+  margin-bottom: 3.2rem;
+}
+
+.grid {
+  display: grid;
+  column-gap: 4.2rem;
+  row-gap: 9.6rem;
+}
+.grid--2--cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--3--cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* main css */
+.header {
+  background: black;
+}
+.navigation {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-items {
+  display: flex;
+  gap: 3rem;
+  justify-content: space-between;
+}
+.nav-item {
+  list-style: none;
+}
+.nav-link {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+.nav-link:hover,
+.nav-link:active,
+.nav-link:focus {
+  color: yellow;
+}
+
+.nav-menu {
+  position: absolute;
+  top: 5rem;
+  width: 100rem;
+  background-color: #e0e0e0;
+}
+.nav-menu.hidden {
+  visibility: hidden;
+}
+/* sublinks menu */
+.sublinks-container {
+  padding: 1rem;
+}
+.sub-link-item {
+  list-style: none;
+}
+.sub-link {
+  text-transform: uppercase;
+  color: #222;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  padding: 1rem;
+  font-size: 1.4rem;
+}
+/* section css */
+.section {
+  padding: 13rem 0;
+}
+.hero-img {
+  width: 100%;
+}
+.heading-primary span {
+  color: green;
+}
+
+.content-description {
+  font-size: 1.4rem;
+  letter-spacing: 1.2px;
+  line-height: 1.3;
+  color: #666;
+  margin-bottom: 1.3rem;
+}
+.button-container {
+  margin-bottom: 4.2rem;
+}
+.btn {
+  font-size: 1.6rem;
+  padding: 1rem 2rem;
+  margin: 1rem 1rem 0 0;
+  color: white;
+  background-color: green;
+  border: none;
+  border: 1px solid green;
+  box-shadow: 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn:hover {
+  color: green;
+  background-color: white;
+  border: 1px solid green;
+}
+.second {
+  background-color: lightblue;
+  border: none;
+}
+.second:hover {
+  border: none;
+  color: lightblue;
+}
+.options {
+  display: flex;
+  gap: 1rem;
+}
+.items {
+  display: flex;
+  align-items: center;
+}
+.option-title {
+  font-size: 1.4rem;
+}
+.icon {
+  font-size: 2.4rem;
+}
